@@ -1,0 +1,42 @@
+.coloured-button {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  background-color: var(--primary-red);
+  width: 277px;
+  height: 67px;
+  cursor: pointer;
+  border: 1px solid var(--primary-red);
+  border-radius: 6px;
+}
+
+.coloured-button:hover {
+  color: #fff !important;
+  opacity: 0.9 !important;
+}
+
+.outlined-button {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--primary-black);
+    background-color: transparent;
+    width: 277px;
+    height: 67px;
+    cursor: pointer;
+    border: 1px solid var(--primary-black);
+    border-radius: 6px;
+}
+
+.outlined-button:hover {
+    border: 1px solid var(--primary-red);
+    color: var(--primary-red);
+
+  }
+
+  .icon-button {
+    width: 50px;
+    height: 50px;
+    border: 3px solid var(--primary-black);
+    border-radius: 4px;
+    background-color: transparent;
+  }

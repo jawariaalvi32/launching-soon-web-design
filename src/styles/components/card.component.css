@@ -1,0 +1,15 @@
+.card {
+    padding: 10px 0px;
+    margin: 15px 15px 0px 0px;
+    background-color: var(--gray);
+}
+
+.card-image {
+    transform: translateY(-60px);
+    margin: auto;
+    display: flex;
+}
+
+.card p {
+    margin-top: -20px;
+}

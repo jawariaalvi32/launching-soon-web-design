@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px;
+}
+
+.navbar-logo {
+
+}
+
+.navbar-menu-list {
+    display: flex;
+}
+
+.navbar-menu {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 15px;
+    cursor: pointer;
+}
