@@ -10,17 +10,17 @@ import Main from './pages/Main';
 function App() {
   return (
     <div className="App">
-       <BrowserRouter>
+       {/* <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}>
         </Route>
         <Route path='/contact-us' element={<Contact/>} />
 
         <Route path='/about-us' element={<About/>} />
-      </Routes>
-          {/* <Main/> */}
+      </Routes> */}
+          <Main/>
 
-    </BrowserRouter>
+    {/* </BrowserRouter> */}
     </div>
   );
 }

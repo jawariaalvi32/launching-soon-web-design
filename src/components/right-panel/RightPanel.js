@@ -103,7 +103,7 @@ const RightPanel = () => {
                   </Form.Item>
                 </Col>
                 <Col span={24}>
-                  <ColouredButton btnText={"Send"} />
+                  <ColouredButton btnText={"Send"} type="btn-sm"/>
                 </Col>
               </Row>
             </Form>

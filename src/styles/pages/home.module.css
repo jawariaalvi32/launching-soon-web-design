@@ -1,33 +1,114 @@
 .right-panel {
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    padding: 0px 45px;
-    justify-content: center;
-    height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 45px;
+  justify-content: center;
+  height: 100%;
 }
 
 .right-panel-bg {
-    background-image: url('../../assets/images/gray-bg.png');
-    height: 100vh;
-    background-size: 100% 100%;
+  background-image: url("../../assets/images/gray-bg.png");
+  height: 100vh;
+  background-size: 100% 100%;
 }
 
 .right-panel-cross-btn {
-    padding: 15px 0px 0px 25px;
+  padding: 15px 0px 0px 25px;
 }
 
 .left-panel {
-    background-image: url('../../assets/images/MedicalPrescription.gif');
-    background-size: 100% 100%;
+  background-image: url("../../assets/images/MedicalPrescription.gif");
+  background-size: 100% 100%;
+  text-align: left;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 45px;
+  justify-content: center;
+}
+
+.notify-panel {
     text-align: left;
     height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 0px 45px;
     justify-content: center;
+    margin-bottom: auto;
+}
+
+
+
+.left-panel-content {
+  padding: 15px 20px 0px 100px;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .contact-us-underline {
-    width: 750px;
+  width: 750px;
+  margin-left: -100px;
+}
+
+.about-us-underline {
+  width: 550px;
+  margin-left: -100px;
+}
+
+.main-content-box {
+  width: 525px;
+}
+
+.notify-content-box {
+    width: 100%
+}
+
+@media only screen and (max-width: 600px) {
+  .main-content-box {
+    width: 100%;
+  }
+
+  .left-panel-content {
+    padding: 15px 20px 0px 20px;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  .right-panel-bg {
+    background-image: url("../../assets/images/gray-bg-mobile.png");
+    height: 100vh;
+    background-size: 100% 100%;
+  }
+
+  .contact-us-underline {
+    width: 290px;
+    margin-left: -100px;
+  }
+  .about-us-underline {
+    width: 170px;
+    margin-left: -20px;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+   
+    .left-panel-content {
+      padding: 15px 20px 0px 20px;
+      height: 100%;
+      overflow-y: hidden;
+    }
+    .right-panel-bg {
+        margin-top: 15px;
+      }
+      .right-panel {
+        height: 100;
+      }
+  }
+
+@media only screen and (max-width: 1260px) {
+  .left-panel-content {
+    padding: 15px 20px 0px 30px;
+  }
+
+ 
 }

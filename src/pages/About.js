@@ -1,19 +1,20 @@
 import { Col, Row, Typography } from "antd";
 import React from "react";
 import BackButton from "../components/button/BackButton";
-import OutlinedButton from "../components/button/OutlinedButton";
 import TextCard from "../components/card/Card";
 import Line from '../assets/images/line.svg'
 import RightPanel from "../components/right-panel/RightPanel";
+import { motion } from "framer-motion"
 
-const About = () => {
+const About = ({pageName, setPageName}) => {
   return (
+    <motion.div initial={{ x: '100%' }} animate={{ x: '0%' }} exit={{ opacity: 1 }} transition={{ duration: 0.75, ease: 'easeOut' }}>
     <Row >
-      <Col lg={16} md={24} style={{ padding: '15px 20px 0px 100px', height: '100vh', overflowY: 'scroll' }}>
-        <BackButton />
-        <div>
+      <Col lg={16} md={24} className="left-panel-content">
+        <BackButton onClick={ () => setPageName('home') }/>
+        <div style={{ marginTop: '15px' }}>
           <Typography className="primary-heading">About us</Typography>
-          <img src={Line} alt="underline" style={{ marginLeft: '-100px'}}/>
+          <img src={Line} alt="underline" className="about-us-underline"/>
           <p>
             I wonder if I've been changed in the night? Let me think. Was I the
             same when I got up this morning? I almost think I can remember
@@ -41,6 +42,7 @@ const About = () => {
         <RightPanel />
       </Col>
     </Row>
+    </motion.div>
   );
 };
 

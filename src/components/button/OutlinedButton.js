@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
 
-const OutlinedButton = ({ btnText, onClick }) => {
+const OutlinedButton = ({ btnText, onClick, type }) => {
   return (
-    <button className='outlined-button' onClick={() => onClick()}>{btnText}</button>
-  )
-}
+    <button
+      className={
+        type === "btn-sm" ? "btn-sm outlined-button" : "outlined-button"
+      }
+      onClick={() => onClick()}
+    >
+      {btnText}
+    </button>
+  );
+};
 
-export default OutlinedButton
+export default OutlinedButton;

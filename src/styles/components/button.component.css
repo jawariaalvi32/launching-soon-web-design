@@ -16,27 +16,41 @@
 }
 
 .outlined-button {
-    font-weight: 700;
-    font-size: 20px;
-    color: var(--primary-black);
-    background-color: transparent;
-    width: 277px;
-    height: 67px;
-    cursor: pointer;
-    border: 1px solid var(--primary-black);
-    border-radius: 6px;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--primary-black);
+  background-color: transparent;
+  width: 277px;
+  height: 67px;
+  cursor: pointer;
+  border: 1px solid var(--primary-black);
+  border-radius: 6px;
 }
 
 .outlined-button:hover {
-    border: 1px solid var(--primary-red);
-    color: var(--primary-red);
+  border: 1px solid var(--primary-red);
+  color: var(--primary-red);
+}
 
-  }
+.btn-sm {
+  width: 218px !important;
+  height: 57px !important;
+}
 
-  .icon-button {
-    width: 50px;
+.icon-button {
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--primary-black);
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .outlined-button,
+  .coloured-button {
+    width: 192px;
     height: 50px;
-    border: 3px solid var(--primary-black);
-    border-radius: 4px;
-    background-color: transparent;
+    font-size: 16px;
   }
+}

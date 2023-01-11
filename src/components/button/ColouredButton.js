@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
 
-const ColouredButton = ({ btnText, onClick }) => {
+const ColouredButton = ({ btnText, onClick, type }) => {
   return (
-    <button className='coloured-button' onClick={() => onClick()}>{btnText}</button>
-  )
-}
+    <button
+      className={
+        type === "btn-sm" ? "btn-sm coloured-button" : "coloured-button"
+      }
+      onClick={() => onClick()}
+    >
+      {btnText}
+    </button>
+  );
+};
 
-export default ColouredButton
+export default ColouredButton;
